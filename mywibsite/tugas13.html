@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .ball{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 100%;
+            animation: move 10s ease-in infinite alternate, pulse 1s linear infinite alternate;
+            
+        }
+        @keyframes move {
+            0%{ transform: translate(0, 0);}
+            100% { transform: translate( 5600px, 0); }
+        }
+        @keyframes pulse{
+            0%{background-color: orange;}
+            100%{background-color: red;}
+        } 
+        div{
+            padding: 50PX;
+            font-size: 60PX;
+            text-align: center;
+            color:  rgb(184, 122, 6);
+            animation-name: zooming;
+            animation-duration: 1.5s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: 3;
+            animation: pulse 1s linear infinite alternate;
+            
+
+        }
+        text{
+            padding: 40px;
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ball"></div> 
+   <div class="text">
+    <marquee style="color: black;">Assalamualaikum selamat menunaikan ibadah puasa bulan romadhan </marquee> </div>
+</body>
+</html>
